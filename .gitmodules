@@ -1,0 +1,3 @@
+[submodule "custom/plugins/fzf-zsh-plugin"]
+	path = custom/plugins/fzf-zsh-plugin
+	url = git@github.com:unixorn/fzf-zsh-plugin.git
