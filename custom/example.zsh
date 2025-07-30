@@ -1,5 +1,3 @@
-# Put files in this folder to add your own custom functionality.
-# See: https://github.com/ohmyzsh/ohmyzsh/wiki/Customization
 #
 # Files in the custom/ directory will be:
 # - loaded automatically by the init script, in alphabetical order
@@ -10,3 +8,7 @@
 #
 # brainstormr=~/Projects/development/planetargon/brainstormr
 # cd $brainstormr
+#
+llmfill() {
+  pbpaste | llm -m "o4-mini" -s "Fill in {} only. Follow instructions in {}. Don't think." | pbcopy
+}
